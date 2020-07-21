@@ -4,10 +4,10 @@
 
 nano /etc/apt/sources.list
 
-- install sudo and add kubeadmin to sudo users
+- install sudo and add k8s to sudo users
 
 apt install sudo
-usermod -aG sudo kubeadmin
+usermod -aG sudo k8s
 
 - install updates and tools
 
