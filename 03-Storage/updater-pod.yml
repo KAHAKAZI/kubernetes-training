@@ -5,18 +5,20 @@ metadata:
 spec:
   containers:
     - name: web-server
-      image: nginx:alpine
+      image: nginx:1.17.3-alpine
       ports:
         - containerPort: 80
       volumeMounts:
-        - mountPath: /usr/share/nginx/html
-          name: storage
+        - name: storage
+          mountPath: /usr/share/nginx/html
     - name: updater-app
       image: landrzejewski/updater:v1
       volumeMounts:
-        - mountPath: /var/htdocs/
-          name: storage
+        - name: storage
+          mountPath: /var/htdocs
   volumes:
     - name: storage
       hostPath:
         path: /tmp/updater
+      #emptyDir:
+      #  medium: Memory
