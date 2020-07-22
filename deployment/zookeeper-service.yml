@@ -7,4 +7,4 @@ spec:
     app: zookeeper
   ports:
     - port: 2181
-      name: zookeeper
+      targetPort: zookeeper
