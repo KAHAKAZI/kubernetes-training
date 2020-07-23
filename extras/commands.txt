@@ -1,0 +1,47 @@
+Network:
+  https://kubernetes.io/docs/concepts/cluster-administration/addons/
+  https://chrislovecnm.com/kubernetes/cni/choosing-a-cni-provider/
+
+HA
+  https://kubernetes.io/docs/setup/independent/high-availability/
+  https://thenewstack.io/kubernetes-high-availability-no-single-point-of-failure/
+  https://medium.com/@dominik.tornow/kubernetes-high-availability-d2c9cbbdd864
+  https://medium.com/velotio-perspectives/demystifying-high-availability-in-kubernetes-using-kubeadm-3d83ed8c458b
+  https://medium.com/devopslinks/configuring-ha-kubernetes-cluster-on-bare-metal-servers-with-kubeadm-1-2-1e79f0f7857b
+  https://blog.cloudhelix.io/using-a-private-docker-registry-with-kubernetes-f8d5f6b8f646?gi=d0589834f084
+  https://github.com/hardening-kubernetes/from-scratch/blob/master/README.md
+
+Monitoring
+  https://istio.io/
+  https://www.replex.io/blog/5-ways-to-manage-your-kubernetes-resource-usage
+
+RestAPI
+  https://kubernetes.io/docs/tasks/access-kubernetes-api/http-proxy-access-api/
+  https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#proxy
+  http://www.ethernetresearch.com/kubernetes/accessing-kubernetes-api-server-through-rest-apis/
+
+https://kubernetes.io/docs/tutorials/stateless-application/guestbook/
+https://kubernetes.io/docs/tutorials/stateful-application/basic-stateful-set/
+
+Book:
+https://www.manning.com/books/docker-in-practice-second-edition
+https://www.manning.com/books/docker-in-action-second-edition
+https://www.manning.com/books/kubernetes-in-action
+https://www.manning.com/books/istio-in-action
+https://helion.pl/ksiazki/kubernetes-up-and-running-dive-into-the-future-of-infrastructure-2nd-edition-brendan-burns-joe-beda-kelsey-hightower,e_1bzr.htm
+
+https://www.icloud.com/iclouddrive/0GpIr5EbGvjRkSshDmgCV_n0Q#kubernetes
+
+Other:
+https://techbeacon.com/enterprise-it/47-advanced-tutorials-mastering-kubernetes
+https://kubernetes.io/blog
+https://engineering.opsgenie.com/advanced-kubernetes-objects-53f5e9bc0c28
+https://github.com/kelseyhightower/kubernetes-the-hard-way
+https://medium.com/google-cloud/understanding-kubernetes-networking-pods-7117dd28727
+https://github.com/ahmetb/kubernetes-network-policy-recipes
+https://github.com/freach/kubernetes-security-best-practice
+https://unofficial-kubernetes.readthedocs.io
+
+https://blog.container-solutions.com/installing-a-registry-on-kubernetes-quickstart
+https://asciinema.org/a/48HK88yR4rJw0QuHt2VdkuVZn
+https://github.com/alexellis/k8s-tls-registry
