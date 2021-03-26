@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: payments-deployment
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: payments
+  template:
+    metadata:
+      labels:
+        app: payments
+    spec:
+      containers:
+        - name: payments
+          image: landrzejewski/payments-service-tr
+          ports:
+            - containerPort: 8000
+              name: payments
+          envFrom:
+            - configMapRef:
+                name: payments-config-map

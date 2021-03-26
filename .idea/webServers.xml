@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="69d06705-0446-405e-bde1-b78e7c1e2b54" name="admin" url="http://192.168.56.79">
-        <fileTransfer rootFolder="/home/k8s" accessType="SFTP" host="192.168.56.79" port="22" sshConfigId="fa499c8c-0acf-4e3e-a64a-f8b20865573c" sshConfig="k8s@192.168.56.79:22 password">
+      <webServer id="f7cc3024-f0a4-48db-8e4f-49bf10892ca2" name="Kubernetes">
+        <fileTransfer rootFolder="/home/k8s" accessType="SFTP" host="192.168.56.101" port="22" sshConfigId="fa499c8c-0acf-4e3e-a64a-f8b20865573c" sshConfig="k8s@192.168.56.101:22 password">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

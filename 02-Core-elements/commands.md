@@ -136,7 +136,7 @@ kubectl apply -f ingress.yml
 ```
 ## Dashboard
 ```
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta1/aio/deploy/recommended.yaml
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0/aio/deploy/recommended.yaml
 ```
 ```
 kubectl create serviceaccount cluster-admin-dashboard-sa

@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: global-config-map
+data:
+  GIT_CONFIG_URI: https://github.com/landrzejewski/spring-cloud-training
+  ACTIVE_PROFILE: production
+  KAFKA_SERVER: kafka-service
+  KAFKA_ADVERTISED_HOST_NAME: kafka-service
+  KAFKA_ZOOKEEPER_CONNECT: zookeeper-service

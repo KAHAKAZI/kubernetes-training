@@ -15,6 +15,7 @@ spec:
       image: landrzejewski/updater:v2
       #args:
       #  - '10'
+
       # env:
       #  - name: INTERVAL
       #    value: '3'
