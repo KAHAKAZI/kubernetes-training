@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jaeger-server-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app-name: jaeger-server
+  template:
+    metadata:
+      labels:
+        app-name: jaeger-server
+    spec:
+      containers:
+        - name: jaeger-server
+          image: jaegertracing/all-in-one
+          ports:
+            - containerPort: 16686
+              name: jaeger-server

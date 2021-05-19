@@ -1,24 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: configuration-deployment
+  name: configuration-server-deployment
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
-      app: configuration
+      app-name: configuration-server
   template:
     metadata:
       labels:
-        app: configuration
+        app-name: configuration-server
     spec:
       containers:
-        - name: configuration
-          image: landrzejewski/configuration-server-tr
+        - name: configuration-server
+          image: landrzejewski/configuration-server
           ports:
             - containerPort: 8888
               name: http
           envFrom:
             - configMapRef:
-                name: global-config-map
-
+                name: configuration-server-config-map

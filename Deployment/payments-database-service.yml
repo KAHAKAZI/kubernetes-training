@@ -4,7 +4,7 @@ metadata:
   name: payments-database-service
 spec:
   selector:
-    app: payments-database
+    app-name: payments-database
   ports:
     - port: 5432
-      targetPort: postgres
+      targetPort: payments-db

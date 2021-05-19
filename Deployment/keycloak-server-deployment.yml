@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: keycloak-server-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app-name: keycloak-server
+  template:
+    metadata:
+      labels:
+        app-name: keycloak-server
+    spec:
+      containers:
+        - name: keycloak-server
+          image: jboss/keycloak:12.0.4
+          ports:
+            - containerPort: 8080
+              name: keycloak-server
+          env:
+            - name: KEYCLOAK_USER
+              value: admin
+            - name: KEYCLOAK_PASSWORD
+              value: admin
+            - name: KEYCLOAK_FRONTEND_URL
+              value: http://localhost:8001/auth

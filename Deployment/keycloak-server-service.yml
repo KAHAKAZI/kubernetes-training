@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: keycloak-server-service
+spec:
+  selector:
+    app-name: keycloak-server
+  ports:
+    - port: 9100
+      targetPort: keycloak-server

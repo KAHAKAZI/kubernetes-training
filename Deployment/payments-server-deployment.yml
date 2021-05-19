@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: payments-server-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app-name: payments-server
+  template:
+    metadata:
+      labels:
+        app-name: payments-server
+    spec:
+      containers:
+        - name: payments-server
+          image: landrzejewski/payments-service
+          ports:
+            - containerPort: 8000
+              name: http
+          envFrom:
+            - configMapRef:
+                name: global-config-map

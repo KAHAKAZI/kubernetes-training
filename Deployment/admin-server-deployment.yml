@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: admin-server-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app-name: admin-server
+  template:
+    metadata:
+      labels:
+        app-name: admin-server
+    spec:
+      containers:
+        - name: admin-server
+          image: landrzejewski/admin-server
+          ports:
+            - containerPort: 8090
+              name: admin-server
+          env:
+            - name: PORT
+              value: '8090'

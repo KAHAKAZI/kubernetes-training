@@ -6,11 +6,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: zookeeper
+      app-name: zookeeper
   template:
     metadata:
       labels:
-        app: zookeeper
+        app-name: zookeeper
     spec:
       containers:
         - name: zookeeper
