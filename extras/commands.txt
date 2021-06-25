@@ -45,3 +45,5 @@ https://unofficial-kubernetes.readthedocs.io
 https://blog.container-solutions.com/installing-a-registry-on-kubernetes-quickstart
 https://asciinema.org/a/48HK88yR4rJw0QuHt2VdkuVZn
 https://github.com/alexellis/k8s-tls-registry
+
+https://github.com/justmeandopensource/glusterfs/tree/master/glusterfs-heketi-demo
